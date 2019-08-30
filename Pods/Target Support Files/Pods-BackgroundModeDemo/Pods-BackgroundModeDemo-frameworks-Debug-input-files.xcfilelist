@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-BackgroundModeDemo/Pods-BackgroundModeDemo-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework

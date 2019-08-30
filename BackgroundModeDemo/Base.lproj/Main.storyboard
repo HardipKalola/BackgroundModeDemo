@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="u0R-Xu-9b3">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="7iV-Vv-q1g">
+            <objects>
+                <viewController id="u0R-Xu-9b3" customClass="ViewController" customModule="ReachabilitySample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pZx-FD-siM"/>
+                        <viewControllerLayoutGuide type="bottom" id="RGz-90-HEg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7MN-f1-YRb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cbS-y8-EuR">
+                                <rect key="frame" x="155.5" y="332" width="103" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MX9-7h-xdl">
+                                <rect key="frame" x="183" y="288" width="48" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHB-bI-cc7">
+                                <rect key="frame" x="10" y="497.5" width="394" height="55"/>
+                                <color key="backgroundColor" red="0.72445598820000001" green="0.2533718546" blue="0.2161998494" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="eG7-tj-6ns"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Stop Background Task">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopBackgroundTask:" destination="u0R-Xu-9b3" eventType="touchUpInside" id="dnv-KL-Ye7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTd-FA-Kog">
+                                <rect key="frame" x="10" y="597.5" width="394" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9VX-X4-1VA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2X4-QU-hbq">
+                                <rect key="frame" x="10" y="407.5" width="394" height="55"/>
+                                <color key="backgroundColor" red="0.34884697129999998" green="0.72445598820000001" blue="0.06141197894" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="3tF-jg-Pfu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Start Background Task">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startBackgroundTask:" destination="u0R-Xu-9b3" eventType="touchUpInside" id="myZ-DJ-auJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2X4-QU-hbq" firstAttribute="top" secondItem="cbS-y8-EuR" secondAttribute="bottom" constant="22.5" id="4o6-d8-yxC"/>
+                            <constraint firstItem="2X4-QU-hbq" firstAttribute="centerX" secondItem="cbS-y8-EuR" secondAttribute="centerX" id="DgY-EY-bTN"/>
+                            <constraint firstItem="2X4-QU-hbq" firstAttribute="trailing" secondItem="VHB-bI-cc7" secondAttribute="trailing" id="ErP-IV-Ycp"/>
+                            <constraint firstItem="VHB-bI-cc7" firstAttribute="top" secondItem="2X4-QU-hbq" secondAttribute="bottom" constant="35" id="IkG-mm-6Gd"/>
+                            <constraint firstItem="cbS-y8-EuR" firstAttribute="top" secondItem="MX9-7h-xdl" secondAttribute="bottom" constant="20" id="MN6-DP-J0d"/>
+                            <constraint firstItem="MX9-7h-xdl" firstAttribute="centerX" secondItem="7MN-f1-YRb" secondAttribute="centerX" id="Mxh-UQ-f3b"/>
+                            <constraint firstItem="cbS-y8-EuR" firstAttribute="centerX" secondItem="7MN-f1-YRb" secondAttribute="centerX" id="Urn-Gx-VkH"/>
+                            <constraint firstItem="2X4-QU-hbq" firstAttribute="leading" secondItem="xAa-Ka-qoa" secondAttribute="leading" constant="10" id="Zck-k2-LFg"/>
+                            <constraint firstItem="cbS-y8-EuR" firstAttribute="centerX" secondItem="7MN-f1-YRb" secondAttribute="centerX" id="e50-7a-KM0"/>
+                            <constraint firstItem="2X4-QU-hbq" firstAttribute="leading" secondItem="ZTd-FA-Kog" secondAttribute="leading" id="iRy-lO-mwC"/>
+                            <constraint firstItem="cbS-y8-EuR" firstAttribute="centerY" secondItem="7MN-f1-YRb" secondAttribute="centerY" multiplier="0.8" id="kaf-fC-30U"/>
+                            <constraint firstItem="ZTd-FA-Kog" firstAttribute="top" secondItem="VHB-bI-cc7" secondAttribute="bottom" constant="45" id="p0V-5L-OH9"/>
+                            <constraint firstItem="2X4-QU-hbq" firstAttribute="leading" secondItem="VHB-bI-cc7" secondAttribute="leading" id="uVg-ZK-Isf"/>
+                            <constraint firstItem="2X4-QU-hbq" firstAttribute="trailing" secondItem="ZTd-FA-Kog" secondAttribute="trailing" id="wAc-vL-Qs2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xAa-Ka-qoa"/>
+                    </view>
+                    <connections>
+                        <outlet property="hostNameLabel" destination="MX9-7h-xdl" id="Iei-04-HIX"/>
+                        <outlet property="label" destination="ZTd-FA-Kog" id="eIS-YB-Q63"/>
+                        <outlet property="networkStatus" destination="cbS-y8-EuR" id="BEU-NO-Rkf"/>
+                        <outlet property="starTaskButton" destination="2X4-QU-hbq" id="zub-p1-gKa"/>
+                        <outlet property="stopTaskButton" destination="VHB-bI-cc7" id="Uvs-Ma-kFh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h41-sn-rVj" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
